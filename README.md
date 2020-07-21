@@ -18,8 +18,8 @@
     </a>
 </p>
 
-# Wheel of Fortune
-The simulation game for the TV game show Wheel of Fortune.
+# Lovely SMS
+The small application for sending lovely messages.
 
 ## Features
 
@@ -31,7 +31,6 @@ The [wiki](https://github.com/tengames/lovely-sms/wiki) provides implementation 
 ## Dependencies
 
 ## Requirements
-- Java 1.6
 
 ## License
 This project is currently available under the [MIT](LICENSE) License.
