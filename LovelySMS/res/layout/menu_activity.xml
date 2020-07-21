@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/back_ngoai"
+        android:orientation="vertical"
+        android:weightSum="80" >
+
+        <RelativeLayout
+            android:id="@+id/ad_holder"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/adView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                ads:adSize="BANNER"
+                ads:adUnitId="@string/banner_ad_unit_id" >
+            </com.google.android.gms.ads.AdView>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="55" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="25"
+            android:orientation="vertical" >
+
+            <GridView
+                android:id="@+id/gridview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:horizontalSpacing="1.0dip"
+                android:numColumns="2"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="10dip" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

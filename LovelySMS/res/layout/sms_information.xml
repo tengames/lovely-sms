@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/layoutnoidung"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/back_trong"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_back"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <!-- android:background="#ff40caf7" > -->
+
+                <TextView
+                    android:id="@+id/tvTypesms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:textColor="#ba27e0"
+                    android:textSize="25.0dip" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginTop="5dip" >
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/menuButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:orientation="horizontal"
+                android:weightSum="4" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <Button
+                        android:id="@+id/home"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/homecopy"
+                        android:minHeight="0dp"
+                        android:minWidth="0dp" >
+
+                    </Button>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/btShare"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/share1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <Button
+                        android:id="@+id/btCopy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/copy2"
+                        android:minHeight="0dp"
+                        android:minWidth="0dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <Button
+                        android:id="@+id/btSms"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/sms"
+                        android:minHeight="0dp"
+                        android:minWidth="0dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/banner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal" >
+                
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bottom_menu"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/banner"
+                android:layout_marginBottom="5.0dip"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingTop="5.0dip" >
+
+                <ImageView
+                    android:id="@+id/ivFirst"
+                    android:layout_width="40.0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_marginRight="30.0dip"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/first" />
+
+                <ImageView
+                    android:id="@+id/ivPrev"
+                    android:layout_width="40.0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_marginRight="30.0dip"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/previous" />
+
+                <TextView
+                    android:id="@+id/tvPage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30.0dip"
+                    android:hint="@string/app_name"
+                    android:paddingLeft="3.0dip"
+                    android:paddingTop="3.0dip"
+                    android:textColor="#ba24e0"
+                    android:textStyle="normal" />
+
+                <ImageView
+                    android:id="@+id/ivNext"
+                    android:layout_width="40.0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_marginRight="30.0dip"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/next" />
+
+                <ImageView
+                    android:id="@+id/ivLast"
+                    android:layout_width="40.0dip"
+                    android:layout_height="40.0dip"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/last" />
+            </LinearLayout>
+
+            <ScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_above="@id/bottom_menu"
+                android:layout_margin="10dip"
+                android:background="@drawable/khung" >
+
+                <TextView
+                    android:id="@+id/tvInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:layout_marginTop="10.0dip"
+                    android:hint="@string/hint"
+                    android:textColor="@color/info" />
+            </ScrollView>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

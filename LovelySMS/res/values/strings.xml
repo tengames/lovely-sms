@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Lovely SMS</string>
+    <string name="title">Kết nối yêu thương</string>
+    <string name="hint">sms</string>
+    <string name="copy">Copy</string>
+    <string name="anim">Animation</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3745845073052186/5222847353</string>
+
+</resources>

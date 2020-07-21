@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="tieude">#fff709c7</color>
+    <color name="title_loichuc">#ffc6f6f5</color>
+    <color name="noidung">#ff032709</color>
+    <color name="sms">#ff0000ff</color>
+    <color name="info">#ffffff</color>
+    <color name="dialog_background">#ffffff</color>
+
+</resources>
